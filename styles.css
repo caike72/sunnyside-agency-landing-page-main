@@ -21,10 +21,9 @@
     box-sizing: border-box;
 }
 
-
 /* Mobile */
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 600px) {
     body {
         background: crimson;
         min-width: 250px;
