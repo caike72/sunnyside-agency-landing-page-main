@@ -19,6 +19,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 /* Mobile */
@@ -26,7 +27,7 @@
 @media only screen and (max-width: 600px) {
     body {
         background: var(--white);
-        min-width: 250px;
+        min-width: 320px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -57,10 +58,12 @@
 
     .arrow {
         background: url(/images/icon-arrow-down.svg);
+        display: block;
         height: 144px;
         background-repeat: no-repeat;
         background-position: center;
         margin-top: 60px;
+        cursor: pointer;
     }
 
     .ovo {
@@ -228,9 +231,10 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        align-items: center;
     }
 
     .random-images>img {
-        width: clamp(187px, 25%, 187px); 
+        width: 50%; 
     }
 }
