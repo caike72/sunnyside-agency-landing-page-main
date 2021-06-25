@@ -25,8 +25,11 @@
 
 @media only screen and (max-width: 600px) {
     body {
-        background: crimson;
+        background: var(--white);
         min-width: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     header {
@@ -73,6 +76,8 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        width: 77%;
+        align-self: center;
     }
 
     h2 {
@@ -89,8 +94,8 @@
         font-family: var(--barlow);
         color: hsl(232, 10%, 55%);
         text-align: center;
-        line-height: 30px;
-        font-size: 18px;
+        line-height: 24px;
+        font-size: 16px;
     }
 
     .learnmore {
@@ -170,8 +175,6 @@
         order: 2;
     }
 
-    .testimonials>h3 {
-
-    }
+    .testimonials>h3 {}
 
 }
