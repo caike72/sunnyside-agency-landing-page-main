@@ -155,9 +155,75 @@ h2 {
     order: 0;
 }
 
+.cherry, .orange {
+    width: 50%;
+}
+
+.cherry {
+    background: url(/images/desktop/image-graphic-design.jpg);
+    height: 600px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color: var(--darkcyan);
+
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.cherry>h2 {
+    color: var(--darkcyan) !important;
+    order: 2;
+    text-align: center;
+}
+
+.cherry>p {
+    font-family: var(--barlow);
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    order: 1;
+    margin-bottom: 65px;
+    line-height: 25px;
+    width: 53%;
+    margin: 5px auto 50px auto;
+}
+
+.orange {
+    background: url(/images/desktop/image-photography.jpg);
+    height: 600px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color: var(--darkblue);
+
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.orange>h2 {
+    color: var(--darkblue) !important;
+    order: 2;
+    text-align: center;
+}
+
+.orange>p {
+    font-family: var(--barlow);
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    order: 1;
+    margin-bottom: 65px;
+    line-height: 25px;
+    width: 54%;
+    margin: 5px auto 50px auto;
+}
 
 
-/* Mobile */
+
+/* ---------------------------- Mobile ---------------------------- */
 
 @media only screen and (max-width: 600px) {
     body {
@@ -242,47 +308,24 @@ h2 {
         background-size: cover;
     }
 
+    .cherry, .orange {
+        width: 100%;
+    }
+
+    .cherry>p, .orange>p {
+        width: 100%;
+    }
+
     .cherry {
         background: url(/images/mobile/image-graphic-design.jpg);
         height: 600px;
-        background-position: top;
-        background-repeat: no-repeat;
         background-size: cover;
-
-        color: var(--darkcyan);
-
-        display: flex;
-        flex-direction: column-reverse;
-        
-    }
-
-    .cherry>p {
-        font-family: var(--barlow);
-        font-size: 16px;
-        font-weight: 600;
-        text-align: center;
-        order: 1;
-        margin-bottom: 65px;
-        line-height: 25px;
-    }
-
-    .cherry>h2 {
-        color: var(--darkcyan) !important;
-        order: 2;
     }
 
     .orange {
         background: url(/images/mobile/image-photography.jpg);
         height: 600px;
-        background-position: top;
-        background-repeat: no-repeat;
-        background-size: cover;
-
-        color: var(--darkblue);
-
-        display: flex;
-        flex-direction: column-reverse;
-        
+        background-size: cover;     
     }
 
     .orange>p {
@@ -293,11 +336,6 @@ h2 {
         order: 1;
         margin-bottom: 65px;
         line-height: 25px;
-    }
-
-    .orange>h2 {
-        color: var(--darkblue) !important;
-        order: 2;
     }
 
     /* TESTIMONIALS */
