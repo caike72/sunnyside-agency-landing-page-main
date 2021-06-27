@@ -94,6 +94,67 @@ header {
     cursor: pointer;
 }
 
+.section-1 {
+    display: flex;
+    flex-direction: column;
+    width: 31%;
+    margin: 0 auto;
+}
+
+h2 {
+    padding-top: 75px;
+    font-size: 36px;
+    font-weight: 900;
+    font-family: var(--fraunces);
+    color: #2a323f;
+    text-align: left;
+    padding-bottom: 30px;
+}
+
+.section-1>p {
+    font-family: var(--barlow);
+    color: hsl(232, 10%, 55%);
+    text-align: left;
+    line-height: 26px;
+    font-size: 16px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.ovo {
+    background: url(/images/desktop/image-transform.jpg);
+    height: 600px;
+    width: 50%;
+    background-position: center;
+    background-size: cover;
+    order: 2;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.learnmore {
+    font-size: 16px;
+    font-weight: 900;
+    font-family: var(--fraunces);
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #2a323f;
+}
+
+.copo {
+    background: url(/images/desktop/image-stand-out.jpg);
+    height: 600px;
+    width: 50%;
+    background-position: center;
+    background-size: cover;
+    order: 0;
+}
+
 
 
 /* Mobile */
@@ -132,9 +193,22 @@ header {
     .ovo {
         background: url(/images/mobile/image-transform.jpg);
         height: 300px;
+        width: 100%;
+        order: 0;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+    }
+
+    h2 {
+        font-size: 30px;
+        font-weight: 900;
+        text-align: center;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;  
     }
 
     .section-1 {
@@ -143,41 +217,26 @@ header {
         flex-direction: column;
         justify-content: center;
         width: 77%;
-        align-self: center;
-    }
-
-    h2 {
-        padding-top: 75px;
-        font-size: 30px;
-        font-weight: 900;
-        font-family: var(--fraunces);
-        color: #2a323f;
-        text-align: center;
-        padding-bottom: 30px;
+        margin: 0 auto;
     }
 
     .section-1>p {
-        font-family: var(--barlow);
-        color: hsl(232, 10%, 55%);
         text-align: center;
         line-height: 24px;
-        font-size: 16px;
     }
 
     .learnmore {
         font-size: 16px;
-        font-weight: 900;
-        font-family: var(--fraunces);
         text-align: center;
-        text-transform: uppercase;
-        text-decoration: none;
-        color: #2a323f;
-        margin: 50px auto;
+        padding-bottom: 40px;
+        padding-top: 10px;
     }
+
 
     .copo {
         background: url(/images/mobile/image-stand-out.jpg);
         height: 300px;
+        width: 100%;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
