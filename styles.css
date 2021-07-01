@@ -38,6 +38,10 @@ header {
 	background-position: center;
 }
 
+.icon {
+	display: none;
+}
+
 .menu {
 	display: flex;
 	flex-direction: row;
@@ -45,7 +49,7 @@ header {
 	padding: 30px 30px 0px 50px;
 }
 
-.menuitems > a {
+.flex-item > a {
 	font-family: var(--barlow);
 	color: var(--white);
 	text-decoration: none;
@@ -344,7 +348,7 @@ footer {
 
 /* ---------------------------- Mobile ---------------------------- */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
 	body {
 		min-width: 320px;
 	}
@@ -354,6 +358,16 @@ footer {
 		height: 540px;
 		background-size: cover;
 		background-position: center;
+	}
+
+	.icon {
+		display: block;
+		padding-top: 32px;
+		padding-right: 24px;
+		align-self: right;
+
+		position: relative;
+		z-index: 1;
 	}
 
 	.logo {
@@ -373,6 +387,33 @@ footer {
 
 	.menuitems {
 		display: none;
+		position: absolute;
+		width: 100%;
+
+		padding-top: 30em;
+	}
+
+	.flex-item {
+		display: flex;
+		flex-direction: column;
+		width: 80%;
+		padding: 1rem 0;
+		margin: 0 auto;
+		background-color: white;
+	}
+
+	.flex-item > .regular {
+		display: block;
+		text-align: center;
+		padding: 1.7rem;
+		color: #85818f;
+	}
+
+	.contact {
+		background-color: #fbd601;
+		width: min-content;
+		margin: 0 auto;
+		margin-bottom: 1.4em;
 	}
 
 	.ovo {

@@ -22,14 +22,19 @@
 
   <body>
     <header>
-      <div class="menu">
-      <img class="logo" src="/images/logo.svg" alt="sunnyside logo">
-        <div class="menuitems">
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Projects</a>
-        <a class="contact" href="#">Contact</a>
-      </div>
+        <div class="menu">
+          <img class="logo" src="/images/logo.svg" alt="sunnyside logo">
+          <div class="menuitems">
+            <div class="flex-item">
+              <a class="regular" href="#">About</a>
+              <a class="regular" href="#">Services</a>
+              <a class="regular" href="#">Projects</a>
+              <a class="contact" href="#">Contact</a>
+            </div>
+          </div>
+          <a class="icon" onclick="responsiveMenu()">
+            <svg width="24" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M24 16v2H0v-2h24zm0-8v2H0V8h24zm0-8v2H0V0h24z" fill="#FFF" fill-rule="evenodd"/></svg>
+          </a>
     </div>
       <h1 class="headline">We are creatives</h1>
       <a href="#jump" class="arrow"></a>
@@ -118,6 +123,7 @@
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="http://caikelaurentino.com.br">Caike Laurentino</a>.
     </div>
+    <script src="script.js"></script>
   </body>
 
 </html>
